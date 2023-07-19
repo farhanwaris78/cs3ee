@@ -1,4 +1,4 @@
-package com.hexated
+package com.farhanwaris78
 
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
@@ -13,7 +13,7 @@ import java.util.ArrayList
 
 class KisskhProvider : MainAPI() {
     override var mainUrl = "https://kisskh.co"
-    override var name = "Kisskh"
+    override var name = "Kisskh_co"
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(
@@ -22,14 +22,33 @@ class KisskhProvider : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "&type=2&sub=0&country=2&status=0&order=1" to "Movie Popular",
-        "&type=2&sub=0&country=2&status=0&order=2" to "Movie Last Update",
-        "&type=1&sub=0&country=2&status=0&order=1" to "TVSeries Popular",
-        "&type=1&sub=0&country=2&status=0&order=2" to "TVSeries Last Update",
-        "&type=3&sub=0&country=0&status=0&order=1" to "Anime Popular",
-        "&type=3&sub=0&country=0&status=0&order=2" to "Anime Last Update",
-        "&type=4&sub=0&country=0&status=0&order=1" to "Hollywood Popular",
-        "&type=4&sub=0&country=0&status=0&order=2" to "Hollywood Last Update",
+        "Explore?type=2&sub=0&country=0&status=0&order=1" to "Movie Popular",
+        "Explore?type=2&sub=0&country=0&status=0&order=2" to "Movie Last Update",
+        "Explore?type=2&sub=0&country=0&status=0&order=3" to "Movie Release Date",
+        "Explore?type=1&sub=0&country=0&status=0&order=1" to "TVSeries Popular",
+        "Explore?type=1&sub=0&country=0&status=0&order=2" to "TVSeries Last Update",
+        "Explore?type=1&sub=0&country=0&status=0&order=3" to "TVSeries Release Date",
+        "Explore?type=3&sub=0&country=0&status=0&order=1" to "Anime Popular",
+        "Explore?type=3&sub=0&country=0&status=0&order=2" to "Anime Last Update",
+        "Explore?type=3&sub=0&country=0&status=0&order=3" to "Anime Release Date",
+        "Explore?type=4&sub=0&country=0&status=0&order=1" to "Hollywood Popular",
+        "Explore?type=4&sub=0&country=0&status=0&order=2" to "Hollywood Last Update",
+        "Explore?type=4&sub=0&country=0&status=0&order=3" to "Hollywood Release Date",
+        "Explore?type=1&sub=0&country=2&status=0&order=1" to "TVs South Korea Popular",
+        "Explore?type=1&sub=0&country=2&status=0&order=2" to "TVs South Korea Last Update",
+        "Explore?type=1&sub=0&country=2&status=0&order=3" to "TVs South Korea RD",
+        "Explore?type=1&sub=0&country=1&status=0&order=1" to "TVs China Popular",
+        "Explore?type=1&sub=0&country=1&status=0&order=2" to "TVs China LU",
+        "Explore?type=1&sub=0&country=1&status=0&order=3" to "TVs China RD",
+        "Explore?type=1&sub=0&country=5&status=0&order=1" to "TVs Thailand Popular",
+        "Explore?type=1&sub=0&country=5&status=0&order=2" to "TVs Thailand LU",
+        "Explore?type=1&sub=0&country=5&status=0&order=3" to "TVs Thailand RD",
+        "Explore?type=1&sub=0&country=3&status=0&order=1" to "TVs Japan Popular",
+        "Explore?type=1&sub=0&country=3&status=0&order=2" to "TVs Japan LU",
+        "Explore?type=1&sub=0&country=3&status=0&order=3" to "TVs Japan RD",
+        "Explore?type=1&sub=0&country=7&status=0&order=1" to "TVs Taiwan Popular",
+        "Explore?type=1&sub=0&country=7&status=0&order=2" to "TVs Taiwan LU",
+        "Explore?type=1&sub=0&country=7&status=0&order=3" to "TVs Taiwan RD",
     )
 
     override suspend fun getMainPage(
