@@ -1,0 +1,41 @@
+[
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=kissasian.pe&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/farhanwaris78/cs3ee",
+        "fileSize": 12805,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "farhanwaris78"
+        ],
+        "tvTypes": [
+            "AsianDrama"
+        ],
+        "version": -1,
+        "internalName": "Kissasian",
+        "url": "https://raw.githubusercontent.com/farhanwaris78/cs3ee/builds/Kissasian.cs3",
+        "name": "Kissasian"
+    },
+    {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=kisskh.me&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/farhanwaris78/cs3ee",
+        "fileSize": 19392,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "farhanwaris78"
+        ],
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries",
+            "Anime",
+            "Movie"
+        ],
+        "version": 1,
+        "internalName": "KisskhProvider",
+        "url": "https://raw.githubusercontent.com/farhanwaris78/cs3ee/builds/KisskhProvider.cs3",
+        "name": "KisskhProvider"
+    }
+]

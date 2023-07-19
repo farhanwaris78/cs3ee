@@ -1,0 +1,8 @@
+{
+  "name": "<cs3ee>",
+  "description": "<Just doing tests>",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/farhanwaris78/cs3ee/builds/plugins.json"
+  ]
+}
